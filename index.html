@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="icon" href="./assets/image.png" type="image/png">
+    <title>RABBI' //. digital store</title>
+</head>
+
+<body onload="playSlider()">
+
+    <header>
+        <ul class="banner slider">
+            <li class="slides">ENVÍO GRATIS A PARTIS DE $7.000</li>
+            <li class="slides">HASTA 12 CUOTAS SIN INTERÉS</li>
+            <li class="slides">F / W '22 SCANDAL & SUSTANCE</li>
+            <li class="slides">ROPA CON HISTORIA</li>
+        </ul>
+
+        <nav class="navbar">
+
+            <a href="./index.html" class="logo">
+                <h1 class="logo">RABBI</h1>
+            </a>
+            <nav class="navbar-desktop">
+                <ul class="inlineList">
+                    <li><a href="./views/products.html">Productos</a></li>
+                    <li><a href="./views/categories.html">Categorías</a></li>
+                </ul>
+            </nav>
+            <nav class="navbar-mobile">
+                <i class="fas fa-bars menu"></i>
+                <ul class="dropdown">
+                    <li><a href="./views/products.html">Productos</a></li>
+                    <li><a href="./views/categories.html">Categorías</a></li>
+                </ul>
+            </nav>
+            <a href="./views/shoppingcart.html">
+                <i class="fas fa-shopping-cart cart">
+                    <p id="cart-counter"></p>
+                </i>
+            </a>
+        </nav>
+
+
+    </header>
+
+    <main>
+
+        <button onClick="addProduct()">+</button>
+
+    </main>
+
+    <footer>
+
+
+
+    </footer>
+
+    <script type="module" src="/index.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slider').slick({
+                vertical: true,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                speed: 700,
+                arrows: false
+            });
+        });
+    </script>
+</body>
+
+</html>

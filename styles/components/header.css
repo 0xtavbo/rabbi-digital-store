@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Source+Sans+Pro:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap');
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.banner {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    height: 32px;
+    border: 1px dotted white;
+}
+
+.logo {
+    font-family: "Playfair Display";
+    text-decoration: none;
+    font-size: 45px;
+    margin-left: 15px;
+}
+
+.logo:visited {
+    color: black;
+}
+
+.inlineList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+li, a {
+    list-style: none;
+    text-decoration: none;
+    font-family: "Caveat";
+    font-size: 24px;
+    font-weight: 350;
+    margin-right: 7px;
+    margin-left: 7px;
+    color: black;
+}
+
+.slides {
+    color: white;
+    font-size: 15px;
+    margin-top: 4px;
+    font-weight: 100;
+    font-family: "Playfair Display";
+}
+
+.cart {
+    font-size: 30px;
+    padding-right:15px;
+    margin-top: 15px;
+    margin-left: 25px;
+    color: black;
+}
+
+.navbar-mobile {
+    display: none;
+}
+
+@media (max-width: 480px) {
+
+    .banner {
+        font-size: 0.7em;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .cart {
+        font-size: 25px;
+        margin-top: 9px;
+    }
+
+    .menu {
+        font-size: 25px;
+        margin-top: 25px;
+    }
+
+    .navbar-mobile {
+        display: block;
+    }
+
+    li, a {
+        margin: 15px 5px 15px 5px;
+        font-size: 1.1em;
+    }
+    
+    .navbar-mobile:hover .dropdown {
+        position: absolute;
+        display: flex;
+        margin-left: -78px;
+        background-color: rgb(255, 255, 255);
+        margin-top: 5px;
+    }
+
+    .navbar-mobile:hover li {
+        text-align: center;
+    }
+
+    .navbar-desktop {
+        display: none;
+    }
+
+    ul { 
+        display: none;
+    }
+
+}
