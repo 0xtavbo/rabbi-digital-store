@@ -1,0 +1,33 @@
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.product-card {
+    border: 1px solid black;
+    margin-bottom: 15px;
+    margin: 5px 5px 5px 5px;
+}
+
+img {
+    max-width: 350px;
+}
+
+.product-data {
+    font-size: 0.7em;
+    font-weight: 200;
+    text-align: center;
+}
+
+.size-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 480px) {
+
+}

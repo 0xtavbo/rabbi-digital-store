@@ -15,7 +15,7 @@
     <title>RABBI' //. digital store</title>
 </head>
 
-<body onload="playSlider()">
+<body>
 
     <header>
         <ul class="banner slider">
@@ -33,14 +33,14 @@
             <nav class="navbar-desktop">
                 <ul class="inlineList">
                     <li><a href="./views/products.html">Productos</a></li>
-                    <li><a href="./views/categories.html">Categorías</a></li>
+                    <li><a href="./views/favorites.html">Mis Favoritos</a></li>
                 </ul>
             </nav>
             <nav class="navbar-mobile">
                 <i class="fas fa-bars menu"></i>
                 <ul class="dropdown">
-                    <li><a href="./views/products.html">Productos</a></li>
-                    <li><a href="./views/categories.html">Categorías</a></li>
+                    <li class="menu-item"><a class="menu-item" href="./views/products.html">Productos</a></li>
+                    <li class="menu-item"><a class="menu-item" href="./views/favorites.html">Mis Favoritos</a></li>
                 </ul>
             </nav>
             <a href="./views/shoppingcart.html">
@@ -55,17 +55,35 @@
 
     <main>
 
-        <button onClick="addProduct()">+</button>
+        <section>
+            <a href="./views/products.html" class="portada" id="portada"></a>
+        </section>
 
     </main>
 
-    <footer>
+    <footer class="footer">
 
-
+            <p>RABBI &copy; 2021</p>
+            <div class="footer-links-mid">
+                <h3>Nosotros</h3>
+                <ul>
+                    <li><a href="./marketplace/all.html">Locales</a></li>
+                    <li><a href="./marketplace/new.html">Términos y Condiciones</a></li>
+                    <li><a href="./marketplace/art.html">Políticas de Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-right">
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="./marketplace/all.html">Preguntas Frecuentes</a></li>
+                    <li><a href="./marketplace/new.html">Envío y Seguimiento</a></li>
+                    <li><a href="./marketplace/music.html">Contacto</a></li>
+                </ul>
+            </div>
 
     </footer>
 
-    <script type="module" src="/index.js"></script>
+    <script type="module" src="index.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

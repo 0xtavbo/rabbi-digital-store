@@ -1,2 +1,2 @@
-document.getElementById("cart-counter");
+
 
