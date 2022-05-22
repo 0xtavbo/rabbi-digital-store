@@ -43,7 +43,7 @@
                     <li class="menu-item"><a class="menu-item" href="./favorites.html">Mis Favoritos</a></li>
                 </ul>
             </nav>
-            <a href="./views/shoppingcart.html">
+            <a href="./shoppingcart.html">
                 <i class="fas fa-shopping-cart cart">
                     <p id="cart-counter"></p>
                 </i>
@@ -55,7 +55,10 @@
 
     <main>
 
-        <section class="filter">
+        <section class="filters-container">
+            <div class="filters" id="filters-container">
+                <h3>Categorias</h3>
+            </div>
         </section>
 
         <section class="products-container" id="products-container">
@@ -86,6 +89,7 @@
     </footer>
 
     <script type="module" src="../modules/products.js"></script>
+    <script type="module" src="../modules/filters.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
