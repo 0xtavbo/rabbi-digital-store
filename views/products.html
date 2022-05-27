@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- material design -->
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -33,14 +35,14 @@
             <nav class="navbar-desktop">
                 <ul class="inlineList">
                     <li><a href="./products.html">Productos</a></li>
-                    <li><a href="./favorites.html">Mis Favoritos</a></li>
+                    <li><a href="./wishlist.html">Mis Favoritos</a></li>
                 </ul>
             </nav>
             <nav class="navbar-mobile">
                 <i class="fas fa-bars menu"></i>
                 <ul class="dropdown">
                     <li class="menu-item"><a class="menu-item" href="./products.html">Productos</a></li>
-                    <li class="menu-item"><a class="menu-item" href="./favorites.html">Mis Favoritos</a></li>
+                    <li class="menu-item"><a class="menu-item" href="./wishlist.html">Mis Favoritos</a></li>
                 </ul>
             </nav>
             <a href="./shoppingcart.html">
@@ -49,7 +51,6 @@
                 </i>
             </a>
         </nav>
-
 
     </header>
 
@@ -71,7 +72,7 @@
             <p>RABBI &copy; 2021</p>
             <div class="footer-links-mid">
                 <h3>Nosotros</h3>
-                <ul>
+                <ul class="footer-items">
                     <li><a href="./marketplace/all.html">Locales</a></li>
                     <li><a href="./marketplace/new.html">Términos y Condiciones</a></li>
                     <li><a href="./marketplace/art.html">Políticas de Privacidad</a></li>
@@ -79,7 +80,7 @@
             </div>
             <div class="footer-links-right">
                 <h3>Ayuda</h3>
-                <ul>
+                <ul class="footer-items">
                     <li><a href="./marketplace/all.html">Preguntas Frecuentes</a></li>
                     <li><a href="./marketplace/new.html">Envío y Seguimiento</a></li>
                     <li><a href="./marketplace/music.html">Contacto</a></li>
@@ -89,7 +90,7 @@
     </footer>
 
     <script type="module" src="../modules/products.js"></script>
-    <script type="module" src="../modules/filters.js"></script>
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

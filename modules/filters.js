@@ -5,7 +5,7 @@ const filtersContainer = document.getElementById("filters-container");
 const renderCategoryType = (category) => {
     return `
         <label>
-            <input class="filter-option" id="filter-${category}" type="checkbox" rel="${category}" value="${category}"/>
+            <input class="mdc-checkbox filter-option" id="filter-${category}" type="checkbox" rel="${category}" value="${category}"/>
             ${category}
         </label>
     `;
@@ -21,7 +21,7 @@ function loadFilterEvents(filterOptions) {
     filterOptions.forEach((filterOption) => {
         filterOption.addEventListener("click", renderFilteredProducts);
     });
-}
+};
 
 export {
     renderCategoryType,

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
 .products-container {
     display: flex;
     flex-wrap: wrap;
@@ -22,6 +24,8 @@ img {
     font-size: 0.7em;
     font-weight: 200;
     text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .size-wrapper {
@@ -41,6 +45,25 @@ h3 {
 
 .filters {
     text-align: center;
+}
+
+.filter-option {
+    color: black;
+}
+
+label {
+    font-family: 'Roboto';
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.btn {
+    margin-top: 5px;
+    font-size: 1em;
+    height: 25px;
+    width: 180px;
 }
 
 @media (max-width: 480px) {
@@ -67,8 +90,21 @@ h3 {
     }
 
     h3 {
-        font-size: 1em;
+        font-size: 1.1em;
     }
     
+    label {
+        font-family: 'Roboto';
+        font-size: 0.8em;
+        font-weight: 500;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
 
+    .btn {
+        margin-top: 5px;
+        font-size: 0.9em;
+        height: 30px;
+        width: 150px;
+    }
 }

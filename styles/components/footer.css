@@ -28,3 +28,21 @@ p {
     font-size: 1.3em;
     font-weight: 700;
 }
+
+@media (max-width: 480px) {
+
+    .footer {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .footer-items {
+        display: contents;
+    }
+
+    .footer-items li {
+        margin-bottom: 1px;
+        margin-top: 1px;
+    }
+
+}

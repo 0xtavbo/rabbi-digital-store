@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@material/checkbox": "^14.0.0"
+  }
+}
