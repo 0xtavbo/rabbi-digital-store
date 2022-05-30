@@ -2,6 +2,7 @@
 @import url(./components/portrait.css);
 @import url(./components/footer.css);
 @import url(./components/products.css);
+@import url(./components/wishlist.css);
 
 * {
     margin: 0;

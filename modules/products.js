@@ -37,12 +37,14 @@ const productCard = ({id, gender, category, description, price, url}) => {
 
 function renderProducts(products) {
   productsContainer.innerHTML = '';
+
   if (products.length == 0) {
     productsContainer.innerHTML = `
     <p id='no-selection'>
       No ha seleccionado ninguna categoria
     </p>
     `;
+    
   } else {
     products.map((product) => {
       const {id, gender, category, description, price, url} = product
@@ -80,11 +82,11 @@ function loadCardEvents() {
   const wishlistButtons = document.querySelectorAll(".add-wishlist-btn");
 
   cartButtons.forEach((cartBtn) => {
-      cartBtn.addEventListener("click", addProductToCart);
+      cartBtn.addEventListener("click", addProductToList);
   });
 
   wishlistButtons.forEach((wishlistBtn) => {
-    wishlistBtn.addEventListener("click", addProductToWishlist);
+    wishlistBtn.addEventListener("click", addProductToList);
   });
 };
 
@@ -94,6 +96,7 @@ function getListItems(list) {
 
 function isProductInList(list, productId) {
   var array = getListItems(list);
+  console.log(array);
   return array.some(item => item.id === productId.id);
 };
 
@@ -108,12 +111,16 @@ function addProductToWishlist(event) {
   }
 };
 
-function addProductToCart(event) {
-  const id = event.target.value;
-  console.log('id', id);
-  console.log(isProductInList('cart', id));
-  if(!isProductInList('cart', id)) {
-    localStorage.setItem('cart', id)
+function addProductToList(event) {
+  var productId = { id: event.target.value };
+  var list = [];
+  var listType = event.target.classList.contains("add-cart-btn") ? 'cart' : 'wishlist';
+
+  if(!isProductInList(listType, productId)) {
+    list = getListItems(listType);
+    list.push(productId);
+    localStorage.setItem(listType, JSON.stringify(list));
+    console.log(getListItems(listType));
   }
 };
 
