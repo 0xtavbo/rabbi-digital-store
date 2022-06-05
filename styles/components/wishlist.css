@@ -1,6 +1,7 @@
 .wishlist-container {
     display: flex;
     flex-direction: column;
+    margin-top: 25px;
 }
 
 .wishlist-card {
@@ -9,11 +10,12 @@
     margin:0 auto;
     border: 1px solid black;
     width: 400px;
-    margin-bottom: 5px;
+    height: 120px;
+    margin-bottom: 8px;
 }
 
-img .wishlist-card-img {
-    height: 150px;
+.wishlist-img-card {
+    height: 120px;
 }
 
 .product-data {
@@ -28,11 +30,12 @@ img .wishlist-card-img {
 }
 
 .remove-icon {
-    position: absolute;
-    margin-top: 15px;
+    margin-top: 5px;
     font-size: 15px;
-    top: -10px;
-    left: 100px;
+}
+
+.remove-btn:hover {
+    cursor: pointer;
 }
 
 @media (max-width: 480px) {
@@ -41,8 +44,8 @@ img .wishlist-card-img {
         width: 300px;
     }
 
-    img .wishlist-card-img {
-        height: 50px;
+    .product-data {
+        font-size: 0.6em;
     }
-    
+
 }

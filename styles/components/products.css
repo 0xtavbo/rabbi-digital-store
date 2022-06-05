@@ -16,7 +16,7 @@
     padding-bottom: 10px;
 }
 
-img {
+.img-card {
     max-width: 350px;
 }
 
@@ -35,6 +35,7 @@ img {
 
 #no-selection {
     font-size: 1.2em;
+    text-align: center;
 }
 
 h3 {
@@ -81,7 +82,7 @@ label {
         max-width: 170px;
     }
 
-    img {
+    .img-card {
         max-width: 170px;
     }
 

@@ -16,7 +16,7 @@ const productCard = ({id, gender, category, description, price, url}) => {
   return `
     <div class="product-card">
       <div class="img-wrapper">
-        <img class="${gender} ${category}" src="${url}" alt="${gender}-${category}">
+        <img class="img-card ${gender} ${category}" src="${url}" alt="${gender}-${category}">
       </div>
     
       <div class="product-data">
@@ -96,19 +96,7 @@ function getListItems(list) {
 
 function isProductInList(list, productId) {
   var array = getListItems(list);
-  console.log(array);
   return array.some(item => item.id === productId.id);
-};
-
-function addProductToWishlist(event) {
-  var productId = { id: event.target.value };
-  var list = [];
-
-  if(!isProductInList('wishlist', productId)) {
-    list = getListItems('wishlist');
-    list.push(productId);
-    localStorage.setItem("wishlist", JSON.stringify(list));
-  }
 };
 
 function addProductToList(event) {
@@ -120,7 +108,6 @@ function addProductToList(event) {
     list = getListItems(listType);
     list.push(productId);
     localStorage.setItem(listType, JSON.stringify(list));
-    console.log(getListItems(listType));
   }
 };
 
