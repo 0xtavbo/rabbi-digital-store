@@ -3,7 +3,7 @@
 ## **Tecnologies**
  **HTML**
  
- **CSS** (CSS Pre-Processor).
+ **CSS**
  
  **JavaScript**
 
